@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       alunos: [{
-        nome: 'Michael',
+        nome: 'Michael de Matos Cutrim Chaves',
         codigo: 'SI1613009-21',
         curso: 'SI',
         tema: 'TDD',

@@ -50,5 +50,6 @@ button {
 .content {
   padding: 1em;
   margin-top: 4em;
+  margin-bottom: 4em;
 }
 </style>

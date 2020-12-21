@@ -8,7 +8,22 @@
       </ul>
     </p>
       <div>
-        <span id="title">Avaliar Aluno</span>
+        <span id="title">Dados do aluno</span>
+        <div
+          style="width: 100%;
+          border: 0.025rem solid #e7e7e7;
+          margin-top: 12px; margin-bottom: 16px;"
+        ></div>
+      </div>
+       <div class="" style="display: flex; justify-content: space-between">
+          <p> <b> Nome do aluno: </b> {{aluno.nome}} </p>
+          <p> <b> Código: </b> {{aluno.codigo}} </p>
+          <p> <b> Curso: </b> {{aluno.curso}} </p>
+          <p> <b> Tema: </b> {{aluno.tema}} </p>
+        </div>
+      <br>
+      <div>
+        <span id="title">Avaliação</span>
         <div
           style="width: 100%;
           border: 0.025rem solid #e7e7e7;
@@ -112,6 +127,12 @@ export default {
       },
       nota: 0,
       errors: [],
+      aluno: {
+        nome: 'Michael de Matos Cutrim Chaves',
+        codigo: 'SI1613009-21',
+        curso: 'SI',
+        tema: 'TDD',
+      },
       opcoesConteudoCap: [
         {
           nota: '0',
@@ -260,9 +281,10 @@ export default {
 }
 
 #title {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   color: #444444;
 }
+
 </style>
