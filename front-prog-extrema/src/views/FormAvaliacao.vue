@@ -233,7 +233,6 @@ export default {
   methods: {
     onSubmit(e) {
       e.preventDefault();
-      console.log(e);
       // this.checkForm();
       this.$router.push({ name: 'list-alunos' });
     },
