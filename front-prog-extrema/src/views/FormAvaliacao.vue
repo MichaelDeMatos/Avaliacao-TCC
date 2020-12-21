@@ -242,7 +242,7 @@ export default {
       this.$router.push({ name: 'list-alunos' });
     },
     calculaMedia() {
-      console.log('Mudou');
+      console.log('Mudou ');
       const media = (this.form.conteudo + this.form.redacao + this.form.norma
          + this.form.capexp + this.form.resp + this.form.prev) / 2;
       this.nota = media;
