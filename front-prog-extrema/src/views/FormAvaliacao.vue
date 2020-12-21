@@ -21,7 +21,7 @@
 
       <div class="form-row">
         <div class="form-group col-sm-12 col-md-6 col-xl-6 col-lg-6">
-
+        <AppSelectNota label="Teste"></AppSelectNota>
         </div>
 
         <div class="form-group col-sm-12 col-md-6 col-xl-6 col-lg-6">
@@ -54,6 +54,7 @@
 
 <script>
 import AppButton from '@/components/shared/AppButton.vue';
+import AppSelectNota from '@/components/shared/AppSelectNota.vue';
 
 export default {
   data() {
@@ -66,6 +67,7 @@ export default {
   },
   components: {
     AppButton,
+    AppSelectNota,
   },
 
   methods: {
