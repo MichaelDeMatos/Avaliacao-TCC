@@ -16,7 +16,7 @@
         ></div>
       </div>
       <div class="d-flex justify-content-end" style="color:red;">
-        <h4>Nota: {{nota}}</h4>
+        <h4 style="border: 2px solid red; padding: 1px">Nota: {{nota}}</h4>
       </div>
       <h5>Apresentação Escrita</h5>
       <div class="form-row">
@@ -214,6 +214,7 @@ export default {
       e.preventDefault();
       console.log(e);
       // this.checkForm();
+      this.$router.push({ name: 'list-alunos' });
     },
 
     onCancelar() {

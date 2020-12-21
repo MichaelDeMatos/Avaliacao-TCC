@@ -39,19 +39,19 @@ export default {
 
 .primary {
   color: rgb(255, 255, 255);
-  background: rgb(240, 94, 92);
+  background: rgb(54, 187, 28);
 }
 
 .secondary {
-  color: rgb(240, 94, 92);
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background: rgb(218, 21, 21);
 }
 
 .primary:hover {
-  background: rgb(194, 81, 81);
+  background: rgb(26, 128, 6);
 }
 
 .secondary:hover {
-  background: rgb(253, 239, 238);
+  background: rgb(170, 17, 6);
 }
 </style>

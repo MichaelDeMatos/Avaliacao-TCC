@@ -1,6 +1,6 @@
 <template>
   <div class="col-12">
-    <h4>Alunos cadastrados</h4>
+    <h4>Alunos</h4>
     <div class="table-responsive-sm">
       <table class="table table-bordered">
         <thead>
@@ -75,7 +75,7 @@ table {
   text-align: center;
 }
 tbody tr:hover {
-  background: rgb(253, 239, 238);
+  background: rgb(178, 233, 187);
   cursor: pointer;
 }
 </style>
