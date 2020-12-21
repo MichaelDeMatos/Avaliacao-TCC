@@ -3,7 +3,12 @@
     <div class="label">
       <label :for="id">{{ label }}</label>
     </div>
-    <v-select :options="['Canada', 'United States']"></v-select>
+    <v-select
+      label="nota"
+      :reduce="(opcao) => opcao.valor"
+      :options="notas"
+      @input="setSelected"
+    ></v-select>
   </div>
 </template>
 
@@ -16,16 +21,24 @@ export default {
   props: {
     id: String,
     label: String,
-    opcoes: [],
+    value: Number,
+    notas: {
+      type: Array,
+      required: true,
+    },
   },
   components: {
     vSelect,
+  },
+  methods: {
+    setSelected(value) {
+      this.$emit('input', value);
+    },
   },
 };
 </script>
 
 <style scoped>
-
 .label {
   width: 272px;
   height: 40px;
